@@ -31,3 +31,7 @@
     keepBackup = false
 [http]
     postBuffer = 524288000
+[alias]
+    st = status
+    ci = commit
+    
