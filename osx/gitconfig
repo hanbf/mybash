@@ -1,0 +1,26 @@
+[user]
+    name = Han Bing Feng
+    email = hangoglebf@gmail.com
+[core]
+    editor = vim
+    excludesfile = /Users/hanbingfeng/.gitignore_global
+    autocrlf = false
+[push]
+    default = simple
+[color]
+    ui = true
+[merge]
+    tool = p4merge
+[mergetool "ext-merge.sh"]
+    cmd = ext-merge.sh "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"
+    trustExitCode = false
+[mergetool "p4merge"]
+  cmd = /Applications/p4merge.app/Contents/MacOS/p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+  keepTemporaries = false
+  trustExitCode = false
+  keepBackup = false
+[diff]
+    external = ext-diff.sh
+
+[http]
+    postBuffer = 524288000
