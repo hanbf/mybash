@@ -1,0 +1,33 @@
+[user]
+    name = Han Bing Feng
+    email = hangoglebf@gmail.com
+[core]
+    editor = vim
+    excludesfile = /Users/hanbingfeng/.gitignore_global
+    autocrlf = false
+[push]
+    default = simple
+[color]
+    ui = true
+[merge]
+    tool = ext_merge
+[diff]
+    tool = ext_diff
+[difftool]
+    prompt = false
+[difftool "ext_diff"]
+    path = ~/Applications/
+    cmd = ~/Applications/git_ext_diff_araxis.py "$LOCAL" "$REMOTE"
+    keepTemporaries = false
+    trustExitCode = false
+    keepBackup = false
+[mergetool]
+    prompt = false
+[mergetool "ext_merge"]
+    path = ~/Applications/
+    cmd = ~/Applications/git_ext_merge_araxis.py "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+    keepTemporaries = false
+    trustExitCode = false
+    keepBackup = false
+[http]
+    postBuffer = 524288000
