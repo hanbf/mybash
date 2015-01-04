@@ -3,7 +3,6 @@
     email = hangoglebf@gmail.com
 [core]
     editor = vim
-    excludesfile = /Users/hanbingfeng/.gitignore_global
     autocrlf = false
 [push]
     default = simple
@@ -16,16 +15,16 @@
 [difftool]
     prompt = false
 [difftool "ext_diff"]
-    path = ~/Applications/
-    cmd = ~/Applications/git_ext_diff_araxis.py "$LOCAL" "$REMOTE"
+    path = ~/bin
+    cmd = ~/bin/git_ext_diff_bcomp.py "$LOCAL" "$REMOTE"
     keepTemporaries = false
     trustExitCode = false
     keepBackup = false
 [mergetool]
     prompt = false
 [mergetool "ext_merge"]
-    path = ~/Applications/
-    cmd = ~/Applications/git_ext_merge_araxis.py "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+    path = ~/bin/
+    cmd = ~/bin/git_ext_merge_bcomp.py "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
     keepTemporaries = false
     trustExitCode = false
     keepBackup = false
