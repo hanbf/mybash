@@ -9,3 +9,4 @@ ln -f -s `pwd`/svn_ext_diff_araxis_compare.py ~/Applications/svn_ext_diff_araxis
 ln -f -s `pwd`/svn_ext_diff_araxis_compare.py ~/Applications/svn_ext_diff_araxis_compare.py
 
 ln -f -s `pwd`/git_ext_diff_araxis.py ~/Applications/git_ext_diff_araxis.py
+ln -f -s `pwd`/git_ext_merge_araxis.py ~/Applications/git_ext_merge_araxis.py
