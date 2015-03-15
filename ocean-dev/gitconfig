@@ -1,0 +1,21 @@
+[user]
+    name = Han Bing Feng
+    email = hangoglebf@gmail.com
+[core]
+    editor = vim
+    excludesfile = /Users/hanbingfeng/.gitignore_global
+    autocrlf = false
+[push]
+    default = simple
+[color]
+    ui = true
+[merge]
+    tool = ext_merge
+[difftool]
+    prompt = false
+[http]
+    postBuffer = 524288000
+[alias]
+    st = status
+    ci = commit
+    
