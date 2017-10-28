@@ -1,0 +1,41 @@
+#!/bin/bash
+
+# See following for more information: http://www.infinitered.com/blog/?p=19
+
+# Path ------------------------------------------------------------
+export PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:$HOME/bin
+
+
+#Load in .bashrc -------------------------------------------------
+source ~/.bashrc
+
+# Hello Messsage --------------------------------------------------
+# -e is not supported in osx so I removed it.
+echo "Kernel Information: " `uname -smr`
+echo "$(tput setaf 4)`bash --version`$(tput sgr0)"
+echo -ne "$(tput setaf 5)Uptime: "; uptime
+echo -ne "$(tput setaf 5)Server time is: "; date
+echo -ne "$(tput sgr0)"
+
+
+# locale
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+
+# Notes: ----------------------------------------------------------
+# When you start an interactive shell (log in, open terminal or iTerm in OS X, 
+# or create a new tab in iTerm) the following files are read and run, in this order:
+#     profile
+#     bashrc
+#     .bash_profile
+#     .bashrc (only because this file is run (sourced) in .bash_profile)
+#
+# When an interactive shell, that is not a login shell, is started 
+# (when you run "bash" from inside a shell, or when you start a shell in 
+# xwindows [xterm/gnome-terminal/etc] ) the following files are read and executed, 
+# in this order:
+#     bashrc
+#     .bashrc
+##
+
