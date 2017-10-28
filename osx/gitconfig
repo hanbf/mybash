@@ -1,10 +1,12 @@
 [user]
     name = Han Bing Feng
     email = hangoglebf@gmail.com
+    useConfigOnly = true
 [core]
     editor = vim
     excludesfile = /Users/hanbingfeng/.gitignore_global
     autocrlf = false
+    ignorecase = false  
 [push]
     default = simple
 [color]
